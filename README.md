@@ -4,6 +4,8 @@
 To develop an LSTM-based model for recognizing the named entities in the text.
 
 ## Problem Statement and Dataset
+A BiLSTM-based model that automatically identifies and classifies named entities in text by learning contextual relationships between words.
+<img width="371" height="651" alt="image" src="https://github.com/user-attachments/assets/e78a8c00-351c-49ae-abe2-03e8d224ea57" />
 
 
 ## DESIGN STEPS
@@ -38,8 +40,6 @@ Evaluate the model using metrics like precision, recall, and F1-score, then use 
 ### Register Number:212224240094
 
 ```python
-
-
 # Model definition
 class BiLSTMTagger(nn.Module):
     def __init__(self, vocab_size, tagset_size, embedding_dim=50, hidden_dim=100, dropout=0.1):
